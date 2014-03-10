@@ -1,18 +1,25 @@
-fcrop
-=====
+# fcrop
 
-Utility to crop images on focus point
+Node.js utility to crop images by focus point
 
-![Illustration of focus-point crop concept](http://img-fotki.yandex.ru/get/9763/1770335.0/0_954c2_5699b180_XL.png)  
-Illustration of idea
-
-**How to use**
-
+## Fast run  
+1. Clone the repo
+2. Install `gm` module by running `npm install gm`
+3. Install [GraphicsMagick](http://www.graphicsmagick.org/) library
+4. Go to repo directory and run from command prompt  
 `node fcrop.js ./demo/formats.json ./demo/images.json`
+5. Check the `out` folder for cropped demo image in different versions
 
-Utility takes all images specified in `images.json` file and crop it to formats specified by `formats.json`file. Result is stored in directory specified in `images.json`, all files are stored collected by format name folder, e.g. 200x80. Optionally you can specify rubric for each image set to additionally categorize inside each format.
+## Illustration of idea
+![Illustration of focus-point crop concept](http://img-fotki.yandex.ru/get/9763/1770335.0/0_954c2_5699b180_XL.png)  
 
-**formats.json specification**
+## How to use
+
+`node fcrop.js formats.json images.json`
+
+Utility takes all images specified by `images.json` file and crop it to formats specified by `formats.json` file. Result is stored in directory specified by parameter in `images.json`, all files are collected by format name folder, e.g. 200x80. Optionally you can specify rubric for each image set to additionally categorize inside each format.
+
+## formats.json specification
 
 ```
 {
@@ -23,7 +30,7 @@ Utility takes all images specified in `images.json` file and crop it to formats 
 }
 ```
 
-**images.json specification**
+## images.json specification
 
 IMPORTANT NOTICE! All paths are calculated relative to `fcrop.js` folder not to json-files.
 
@@ -42,3 +49,10 @@ IMPORTANT NOTICE! All paths are calculated relative to `fcrop.js` folder not to 
   
 }
 ```
+
+## Requirements and installation
+Utillity requires "GraphicsMagick for node" by Aaron Heckmann. You can find it here https://github.com/aheckmann/gm or just simply install by running from your command prompt `npm install gm`
+
+To process images you need graphics library. GM module can work both with [GraphicsMagick](http://www.graphicsmagick.org/) and [ImageMagick](http://www.imagemagick.org/) 
+
+I used GraphicsMagick, but I think there shouldn't be difference with ImageMagick.
