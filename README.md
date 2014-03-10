@@ -51,7 +51,7 @@ IMPORTANT NOTICE! All paths are calculated relative to `fcrop.js` folder not to 
 ```
 
 ## Requirements and installation
-Utillity requires "GraphicsMagick for node" by Aaron Heckmann. You can find it here https://github.com/aheckmann/gm or just simply install by running from your command prompt `npm install gm`
+Utility requires "GraphicsMagick for node" by Aaron Heckmann. You can find it here https://github.com/aheckmann/gm or just simply install by running from your command prompt `npm install gm`
 
 To process images you need graphics library. GM module can work both with [GraphicsMagick](http://www.graphicsmagick.org/) and [ImageMagick](http://www.imagemagick.org/) 
 
