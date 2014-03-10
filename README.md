@@ -10,8 +10,9 @@ Node.js utility to crop images by focus point
 `node fcrop.js ./demo/formats.json ./demo/images.json`
 5. Check the `out` folder for cropped demo image in different versions
 
-## Illustration of idea
+## How it works
 ![Illustration of focus-point crop concept](http://img-fotki.yandex.ru/get/9763/1770335.0/0_954c2_5699b180_XL.png)  
+Utility takes big original image, for example from photo stock, and crops it preserving position of focus point. _Focus point_ is a center of area on image that contains most important information provided by this image. For example, in portrait photos focus point will be on human eyes in most cases. Preserving relative position of focus point allows us to have almost same image composition even if our destination dimensions are not proportional to original image and we have to crop unnecessary parts.
 
 ## How to use
 
