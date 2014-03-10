@@ -1,0 +1,8 @@
+{
+  "formats": [
+    {"width": 200, "height": 135},
+    {"width": 500, "height": 180},
+    {"width": 900, "height": 172}
+  ]
+  
+}

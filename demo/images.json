@@ -1,0 +1,9 @@
+{
+  "quality": 70,
+  "dest": "./out",
+  
+  "images": [
+    {"filename": "demo/1.jpg", "focus":[2596, 1100]}
+  ]
+  
+}
