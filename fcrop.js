@@ -51,12 +51,12 @@ function focusCrop(filename, focus, resize, callback) {
     var k = resize.width/resize.height;
     
     // define image for crop
-    if (resize.width >= resize.height) {
-      var Wm = size.width,
-        Hm = Math.round(size.width/k); 
-    }  else {
-      var Hm = size.height,
-        Wm = Math.round(size.height*k);
+    var Wm = size.width,
+      Hm = Math.round(size.width/k);
+       
+    if (Hm > size.height) {
+      Hm = size.height,
+      Wm = Math.round(size.height*k);
     }
     
     // define new focus point coordinates
